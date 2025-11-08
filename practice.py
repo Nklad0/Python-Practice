@@ -1,15 +1,10 @@
-# Writing a text to a file called "example.txt"
-try:
-    with open("museums.txt", "w", encoding="utf-8") as f:
-        f.write("AMNH\n")
-        f.write("The Met")
-except: IOError
-print(f"Failed to read file:")
+items = ["TCL", "Lenovo", "Motorola"]
+prices = [25, 47, 19]
+results = zip(items, prices)
+print(list(results))
 
 
-try:
-    with open("planes.txt", "w", encoding="utf-8") as f:
-        f.write("Boeing 737\n")
-        f.write("Boeing 747\n")
-except: IOError
-print(f"Please try again")
+car = {"brand": "Mitsubishi", "model": "Outlander", "year": 2018}
+x = car.items
+print(x)
+
