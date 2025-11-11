@@ -1,18 +1,18 @@
-def nameFormat(first, middle, last):
-     
-  first = first.title()
-  middle = middle.title()
-  last = last.title()
-
-  middle_initial = middle[0] + "."
-
-  print(f"{first} {middle_initial} {last}")
+import random
 
 
+def message(p1, p2):
+    for _ in range(p2):
+        print(p1)
 
 def main():
+    input_text = input("Enter a text: ")
+    text = input_text.title()
+    print(f"text = {text}")
+    n = random.randint(1, 10)
+    print(f"n = {n}")
+    print(f"message(text, n) will print the following:")
+    message(text, n)
 
-   nameFormat("john", "stu", "smith")
-   nameFormat(last="kennedy", first="john", middle="fitzgerald")
-   
-main()
+if __name__ == "__main__":
+    main()
