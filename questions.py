@@ -1,7 +1,18 @@
-import math
-import random
+def nameFormat(first, middle, last):
+     
+  first = first.title()
+  middle = middle.title()
+  last = last.title()
 
-num = random.randint(1, 100)
-square_root = math.isqrt(8)
+  middle_initial = middle[0] + "."
 
-print(f"Square root of {num} = {square_root}")
+  print(f"{first} {middle_initial} {last}")
+
+
+
+def main():
+
+   nameFormat("john", "stu", "smith")
+   nameFormat(last="kennedy", first="john", middle="fitzgerald")
+   
+main()
