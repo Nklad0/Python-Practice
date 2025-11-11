@@ -1,19 +1,7 @@
 import math
+import random
 
-try:
-       
-    numerator = float(input("Enter a numerator: "))
-    denominator = float(input("Enter a denominator: "))
+num = random.randint(1, 100)
+square_root = math.isqrt(8)
 
-    if denominator == 0:
-        raise ZeroDivisionError
-    
-    remainder = math.fmod(numerator, denominator)
-
-    print(f"{int(numerator)} mod {int(denominator)} = {int(remainder)}")
-
-except ZeroDivisionError:
-    print("Denominator cannot be zero. Exiting the quiz")
-
-except ValueError:
-    print("Invalid value")
+print(f"Square root of {num} = {square_root}")
