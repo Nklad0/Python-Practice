@@ -1,10 +1,20 @@
-import math
-import random
+class Car:
+    def __init__(self, make, year):
+        self.make = make
+        self.year = year
 
-num = random.randint(1, 100)
-square_root = math.isqrt(8)
+    def display_info(self):
+        print(f"Car: {self.make}, Year: {self.year}")
 
-print(f"Square root of {num} = {square_root}")
+oldCar = Car("Mitsubishi", 2009)
+newCar = Car("Honda", 2020)
+
+oldCar.display_info()
+newCar.display_info()
+
+print("Year of Car 2:", newCar.year)
+print("Year of Car 1:", oldCar.make)
+
+
     
-    
-    
+
